@@ -10,7 +10,7 @@ function Product(props) {
 
     return (
         <ul>
-            {props.listProduct.map(product => <li>{product}</li>)}
+            {props.listProduct.map((product, index) => <li key={index}>{product}</li>)}
         </ul>
     )
 }
